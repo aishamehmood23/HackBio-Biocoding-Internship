@@ -63,6 +63,21 @@ The code snippet for this task is included in Stage-2 folder. A volcano plot was
 Log2 Fold Change and statistical significance (-log10(p-value)). The dataset was filtered to extract genes that met the significance criteria. The top 5 most significant
 upregulated and downregulated genes were determined based on p-values. The functions of the top differentially expressed genes were retrieved using GeneCards.
 
+**Upregulated Genes Functions**
+- EMILIN2: encodes a protein involved in extracellular matrix organization and cell adhesion. It plays a role in regulating cell proliferation and apoptosis.
+- POU3F4: encodes a transcription factor critical for the development of the inner ear and certain neural structures. Mutations are associated with hearing impairments.
+- LOC285954: an RNA Gene, and is affiliated with the lncRNA class. Diseases associated include Glioma Susceptibility 1 and Gastric Cancer.
+- VEPH1: results in impaired TGF-beta signaling.
+- DTHD1: encodes a protein containing a death domain, which is implicated in apoptotic signaling pathways and other cellular processes.
 
+**Downregulated Genes Functions**
+- TBX5: encodes a transcription factor essential for heart development and limb pattern formation. Mutations can lead to congenital disorders affecting the heart and limbs.
+- LAMA2: encodes laminin subunit alpha-2, a component of the extracellular matrix. It mediates cell attachment, migration, and tissue organization during embryonic
+  development. Mutations are linked to muscular dystrophy.
+- CAV2: encodes caveolin-2, a protein involved in the formation of caveolae (small invaginations) on the cell membrane. It plays a role in signal transduction and may
+  function as a tumor suppressor.
+- IFITM1: encodes a protein that restricts cellular entry of various viral pathogens, including influenza A virus, Ebola virus, and SARS-CoV-2, thereby playing a role in
+  innate immunity.
+- TNN: encodes tenascin N, an extracellular matrix protein that, in tumors, stimulates angiogenesis by promoting endothelial cell elongation, migration, and sprouting.
 
 
