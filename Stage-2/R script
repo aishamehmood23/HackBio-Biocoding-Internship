@@ -45,6 +45,14 @@ downregulated_genes <- data[data$log2FoldChange < -1 & data$logP > 2,]
 top_downregulated_genes <- downregulated_genes[order(-downregulated_genes$logP),]
 head(top_downregulated_genes, 5)
 
+# Add Gene Labels for Top 5 upregulated genes
+text(top_upregulated_genes$log2FoldChange[1:5], top_upregulated_genes$logP[1:5], 
+     labels = top_upregulated_genes$Gene[1:5], cex = 0.45, pos = 3, col = "red")
+
+# Add Gene Labels for Top 5 downregulated genes
+text(top_downregulated_genes$log2FoldChange[1:5], top_downregulated_genes$logP[1:5], 
+     labels = top_downregulated_genes$Gene[1:5], cex = 0.45, pos = 3, col = "darkblue")
+
 # Upregulated Genes Functions, source: www.genecards.org
 # EMILIN2: anchoring smooth muscle cells to elastic fibers.
 # POU3F4: transcription factor with primary action during early neural development.
