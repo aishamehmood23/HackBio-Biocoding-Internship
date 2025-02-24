@@ -52,3 +52,17 @@ time based on a rearranged logistic growth equation.
 This task involved writing a function to compute the Hamming distance between two strings. The script defines a function hamming_distance() that calculates the Hamming
 distance between two strings. Uses nchar() to determine string lengths, max() to get the longer string length when padding is needed, and unlist() (with strsplit) to compare
 the strings character-by-character.
+
+## **Stage-2 Task: Data Interpretation and Visualization**
+### **RNA-Seq Differential Expression Analysis**
+This task required analyzing an RNA-Seq dataset to identify differentially expressed genes between a diseased cell line and a diseased cell line treated with Compound X.
+Below is a detailed description of the tasks and functions implemented using R.
+
+### **Task implementation:**
+The code snippet for this task is included in Stage-2 folder. A volcano plot was generated using base R plot() function, to visualize differentially expressed genes based on
+Log2 Fold Change and statistical significance (-log10(p-value)). The dataset was filtered to extract genes that met the significance criteria. The top 5 most significant
+upregulated and downregulated genes were determined based on p-values. The functions of the top differentially expressed genes were retrieved using GeneCards.
+
+
+
+
