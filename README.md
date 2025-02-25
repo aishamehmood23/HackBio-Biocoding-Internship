@@ -80,4 +80,7 @@ upregulated and downregulated genes were determined based on p-values. The funct
   innate immunity.
 - TNN: encodes tenascin N, an extracellular matrix protein that, in tumors, stimulates angiogenesis by promoting endothelial cell elongation, migration, and sprouting.
 
-
+**Results Interpretation**
+The results suggest that Compound X influences cell signaling, apoptosis, extracellular matrix remodeling, and immune response. Upregulated genes indicate enhanced cell
+remodeling and apoptosis, while downregulated genes suggest reduced immune signaling, adhesion, and tumor-related pathways. This may have implications for cancer treatment,
+tissue repair, or immune modulation.
