@@ -37,21 +37,21 @@ legend("topright",
 upregulated_genes <- data[data$log2FoldChange > 1 & data$logP > 2,]
 
 # Sort upregulated genes by significance (-log10 p-value) in descending order
-top_upregulated_genes <- upregulated_genes[order(-upregulated_genes$logP),]
-head(top_upregulated_genes, 5)
+sorted_upregulated_genes <- upregulated_genes[order(-upregulated_genes$logP),]
+head(sorted_upregulated_genes, 5)
 
 # Extract significantly downregulated genes (log2FoldChange < -1 and p-value < 0.01)
 downregulated_genes <- data[data$log2FoldChange < -1 & data$logP > 2,]
-top_downregulated_genes <- downregulated_genes[order(-downregulated_genes$logP),]
-head(top_downregulated_genes, 5)
+sorted_downregulated_genes <- downregulated_genes[order(-downregulated_genes$logP),]
+head(sorted_downregulated_genes, 5)
 
 # Add Gene Labels for Top 5 upregulated genes
-text(top_upregulated_genes$log2FoldChange[1:5], top_upregulated_genes$logP[1:5], 
-     labels = top_upregulated_genes$Gene[1:5], cex = 0.45, pos = 3, col = "red")
+text(sorted_upregulated_genes$log2FoldChange[1:5], sorted_upregulated_genes$logP[1:5], 
+     labels = sorted_upregulated_genes$Gene[1:5], cex = 0.45, pos = 3, col = "red")
 
 # Add Gene Labels for Top 5 downregulated genes
-text(top_downregulated_genes$log2FoldChange[1:5], top_downregulated_genes$logP[1:5], 
-     labels = top_downregulated_genes$Gene[1:5], cex = 0.45, pos = 3, col = "darkblue")
+text(sorted_downregulated_genes$log2FoldChange[1:5], sorted_downregulated_genes$logP[1:5], 
+     labels = sorted_downregulated_genes$Gene[1:5], cex = 0.45, pos = 3, col = "darkblue")
 
 # Upregulated Genes Functions, source: www.genecards.org
 # EMILIN2: anchoring smooth muscle cells to elastic fibers.
