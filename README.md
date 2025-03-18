@@ -86,7 +86,22 @@ remodeling and apoptosis, while downregulated genes suggest reduced immune signa
 tissue repair, or immune modulation.
 
 ## **Stage-3 Task: Tumor Classification Using PCA and K-Means Clustering**
+The objective of this task was to classify tumors as either benign or malignant using Principal Component Analysis (PCA) and K-Means clustering. Specifically,
+the goals were:
+- Dimensionality reduction using PCA to visualize patterns in the dataset.
+- Applying K-Means clustering to classify and group the patients.
+- Determining if there are potential subclasses within the dataset.
 
+### **Task implementation:**
+The code snippet for this task is included in Stage-3 folder. The cancer dataset was inspected for missing values, and necessary data type conversions were applied. To
+ensure fair comparisons in PCA and clustering, the features were standardized using the scale() function. 
 
+**Principal Component Analysis (PCA)**
+PCA was applied to transform the high-dimensional dataset into a lower-dimensional space, capturing the most significant variance in the data. The first two principal
+components explained a substantial portion of the variance, enabling effective visualization.
 
-
+**PCA Interpretation**
+The PCA plot illustrates the distribution of benign (blue circles) and malignant (yellow triangles) cases across two principal components. While the two groups exhibit some
+separation, there is an observable overlap, indicating that some benign and malignant cases share similar characteristics in this reduced feature space. This suggests that
+PCA alone is not sufficient for perfect classification, but it provides a solid foundation for further clustering methods.
+![PCA Plot](PCA%20Plot.png)
