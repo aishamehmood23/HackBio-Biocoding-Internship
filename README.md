@@ -104,4 +104,9 @@ components explained a substantial portion of the variance, enabling effective v
 The PCA plot below illustrates the distribution of benign (blue circles) and malignant (yellow triangles) cases across two principal components. While the two groups
 exhibit some separation, there is an observable overlap, indicating that some benign and malignant cases share similar characteristics in this reduced feature space. This
 suggests that PCA alone is not sufficient for perfect classification, but it provides a solid foundation for further clustering methods.
+
+---
+
 ![PCA Plot](Stage-3/PCA%20Plot.png)
+
+---
