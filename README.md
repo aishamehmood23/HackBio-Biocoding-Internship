@@ -1,6 +1,6 @@
 # HackBio-Biocoding-Internship
 ## **About the Internship**  
-The **HackBio BioCoding in R and Python** internship is a virtual program designed to equip participants with coding skills for biological data analysis. This program fosters a collaborative learning environment where interns work in teams, engage with mentors, and complete coding-based tasks that enhance their technical proficiency. The internship is organized into stages, with each stage focusing on a different coding exercise or real-world problem.
+The **HackBio BioCoding in R and Python** internship is a virtual program designed to equip participants with coding skills for biological data analysis. This program fosters a collaborative learning environment where interns work in teams, engage with mentors, and complete coding-based tasks that enhance their technical proficiency.  The internship is organized into stages, with each stage focusing on a different coding exercise or real-world problem.
 
 ## **Stage-0 Task: Team Introduction**
 The first task of this internship required us to create an organized representation of our team members' details using R or Python. This task emphasized the importance of structuring and managing data efficiently, a fundamental skill in coding for biological applications.
@@ -31,11 +31,7 @@ the sequence length is a multiple of three. Splits the DNA sequence into codons 
 table and match(). Returns the translated protein sequence as a vector of amino acid abbreviations.
 
 **Function for Logistic Population Growth Curve Simulation**  
-This task required writing a function, logistic_growth_curve(), to simulate and generate a logistic population growth curve. The function initializes a numeric vector using
-numeric() to store population sizes at each time point. Iterates through time points using seq_along() and classifies growth into three phases: Lag phase: Population remains
-constant (Pi), Log phase: Growth follows the logistic equation using exp(), Stationary phase: Population reaches the carrying capacity (K). Uses runif() to introduce
-randomness in the lag and exponential phase durations. Stores results in a matrix (matrix()) and converts it into a dataframe (as.data.frame()). This function models
-population dynamics and can be applied to various biological growth studies, including bacterial cell growth and environmental population changes.
+This task required writing a function, logistic_growth_curve(), to simulate and generate a logistic population growth curve. The function initializes a numeric vector using numeric() to store population sizes at each time point. Iterates through time points using seq_along() and classifies growth into three phases: Lag phase: Population remains constant (Pi), Log phase: Growth follows the logistic equation using exp(), Stationary phase: Population reaches the carrying capacity (K). Uses runif() to introduce randomness in the lag and exponential phase durations. Stores results in a matrix (matrix()) and converts it into a dataframe (as.data.frame()). This function models population dynamics and can be applied to various biological growth studies, including bacterial cell growth and environmental population changes.
 
 **Generating a Dataframe with 100 Different Growth Curves**  
 This task required writing a script to generate a dataset containing 100 different logistic growth curves using the previously defined logistic_growth_curve() function. The
@@ -129,6 +125,7 @@ and malignant cases. These subtypes could correspond to different stages of tumo
 molecular features.
 
 **Interpretation of K-means clustering with K = 4 plot**  
+
 In the plot below:  
 Clusters 1 (Red) & 3 (Green) likely correspond to different types of benign cases.
 - Possibility: One cluster may represent completely benign tumors, while the other might include borderline cases with higher risk of progression.  
@@ -144,12 +141,13 @@ Further validation with clinical/histological/genomic data would be needed to co
 
 ---
 
-### **Conclusions**  
+### **Conclusion**  
 - PCA effectively reduced the dataset’s dimensionality, allowing for easier visualization and interpretation of patient groupings. While it revealed some separation between
 benign and malignant cases, feature overlap indicated the need for additional classification methods.  
 - K-Means clustering, with K=4, identified two primary benign clusters and two malignant clusters, suggesting potential tumor subtypes or different stages of progression. The overlap between some clusters highlights the complexity of distinguishing cases based solely on unsupervised learning.
 
 **Clustering Performance and Refinement**    
-While initial tests showed that K=2 provided a basic separation, increasing to K=3 or K=4 helped uncover more nuanced subgroups, such as borderline cases or different
-malignancy stages. By integrating PCA with K-Means clustering, we gained deeper insights into tumor classification patterns, laying the groundwork for future refinements
-using alternative clustering approaches or supervised learning techniques for improved accuracy.
+This analysis illustrates how unsupervised machine learning techniques can uncover hidden patterns in medical data, offering potential improvements in diagnostic accuracy
+and helping to identify significant subgroups within diagnostic categories. While initial tests showed that K=2 provided a basic separation, increasing to K=3 or K=4 helped
+uncover more nuanced subgroups, such as borderline cases or different malignancy stages. By integrating PCA with K-Means clustering, we gained deeper insights into tumor
+classification patterns, laying the groundwork for future refinements using supervised learning techniques (such as random forest) for improved accuracy. 
