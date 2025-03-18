@@ -144,12 +144,12 @@ Further validation with clinical/histological/genomic data would be needed to co
 
 ---
 
-### **Conclusion**  
+### **Conclusions**  
 - PCA effectively reduced the dataset’s dimensionality, allowing for easier visualization and interpretation of patient groupings. While it revealed some separation between
 benign and malignant cases, feature overlap indicated the need for additional classification methods.  
 - K-Means clustering, with K=4, identified two primary benign clusters and two malignant clusters, suggesting potential tumor subtypes or different stages of progression. The overlap between some clusters highlights the complexity of distinguishing cases based solely on unsupervised learning.
 
-Clustering Performance and Refinement:
+**Clustering Performance and Refinement**    
 While initial tests showed that K=2 provided a basic separation, increasing to K=3 or K=4 helped uncover more nuanced subgroups, such as borderline cases or different
 malignancy stages. By integrating PCA with K-Means clustering, we gained deeper insights into tumor classification patterns, laying the groundwork for future refinements
 using alternative clustering approaches or supervised learning techniques for improved accuracy.
