@@ -80,7 +80,7 @@ upregulated and downregulated genes were determined based on p-values. The funct
   innate immunity.
 - TNN: encodes tenascin N, an extracellular matrix protein that, in tumors, stimulates angiogenesis by promoting endothelial cell elongation, migration, and sprouting.
 
-**Results Interpretation**
+**Results Interpretation**  
 The results suggest that Compound X influences cell signaling, apoptosis, extracellular matrix remodeling, and immune response. Upregulated genes indicate enhanced cell
 remodeling and apoptosis, while downregulated genes suggest reduced immune signaling, adhesion, and tumor-related pathways. This may have implications for cancer treatment,
 tissue repair, or immune modulation.
@@ -96,7 +96,7 @@ the goals were:
 The code snippet for this task is included in Stage-3 folder. The cancer dataset was inspected for missing values, and necessary data type conversions were applied. To
 ensure fair comparisons in PCA and clustering, the features were standardized using the scale() function. 
 
-**Principal Component Analysis (PCA)**
+**Principal Component Analysis (PCA)**  
 PCA was applied to transform the high-dimensional dataset into a lower-dimensional space, capturing the most significant variance in the data. The first two principal
 components explained a substantial portion of the variance, enabling effective visualization.
 
@@ -104,20 +104,20 @@ components explained a substantial portion of the variance, enabling effective v
 
 ![PCA Plot](Stage-3/PCA%20Plot.png)
 
-**Figure 1: PCA Plot of PC1 vs PC2**
+**Figure 1: PCA Plot of PC1 vs PC2**  
 The PCA plot illustrates the distribution of benign (blue circles) and malignant (yellow triangles) cases across two principal components. While the two groups
 exhibit some separation, there is an observable overlap, indicating that some benign and malignant cases share similar characteristics in this reduced feature space. This
 suggests that PCA alone is not sufficient for perfect classification, but it provides a solid foundation for further clustering methods.
 
 ---
 
-**K-Means Clustering**
+**K-Means Clustering**  
 Initially, K-Means clustering was performed with K = 2, assuming that the dataset naturally divides into two groups: benign and malignant. The visualization of K = 2 (shown
 in the attached plot) indicates that while the clustering captures some separation between groups, there is significant overlap between the clusters.
 
 ![K-means Plot](Stage-3/K-means%20(K=2).png)
 
-**Figure 2: K-means Plot with K = 2**
+**Figure 2: K-means Plot with K = 2**  
 The cluster marked in red contains a mix of both benign and malignant cases, suggesting that some malignant cases share feature similarities with benign cases. The second
 cluster (blue) is more compact, likely representing a subset of tumors with more distinct characteristics.
 
@@ -128,7 +128,7 @@ classification. K-Means clustering was then performed with four clusters, and th
 and malignant cases. These subtypes could correspond to different stages of tumor progression, reflecting variations in tumor aggressiveness, cellular composition, or 
 molecular features.
 
-**Interpretation of K-means clustering with K = 4 plot**
+**Interpretation of K-means clustering with K = 4 plot**  
 In the plot below:
 Clusters 1 (Red) & 3 (Green) likely correspond to different types of benign cases.
 - Possibility: One cluster may represent completely benign tumors, while the other might include borderline cases with higher risk of progression.
