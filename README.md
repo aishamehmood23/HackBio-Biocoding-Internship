@@ -110,3 +110,32 @@ exhibit some separation, there is an observable overlap, indicating that some be
 suggests that PCA alone is not sufficient for perfect classification, but it provides a solid foundation for further clustering methods.
 
 ---
+
+**K-Means Clustering**
+Initially, K-Means clustering was performed with K = 2, assuming that the dataset naturally divides into two groups: benign and malignant. The visualization of K = 2 (shown
+in the attached plot) indicates that while the clustering captures some separation between groups, there is significant overlap between the clusters.
+
+![K-means Plot](Stage-3/K-means%20(K=2).png)
+
+**Figure 2: K-means Plot with K = 2**
+The cluster marked in red contains a mix of both benign and malignant cases, suggesting that some malignant cases share feature similarities with benign cases. The second
+cluster (blue) is more compact, likely representing a subset of tumors with more distinct characteristics.
+
+---
+
+To refine the clustering, elbow method was applied to determine the optimal number of clusters, which suggested K = 4, allowing for the possibility of more nuanced subgroup
+classification. K-Means clustering was then performed with four clusters, and this resulted in a more detailed separation, potentially identifying subtypes within benign
+and malignant cases. These subtypes could correspond to different stages of tumor progression, reflecting variations in tumor aggressiveness, cellular composition, or 
+molecular features.
+
+**Interpretation of K-means clustering with K = 4 plot**
+In the plot below:
+Clusters 1 (Red) & 3 (Green) likely correspond to different types of benign cases.
+- Possibility: One cluster may represent completely benign tumors, while the other might include borderline cases with higher risk of progression.
+Clusters 2 (Blue) & 4 (Orange) likely represent malignant cases.
+- Possibility: One may be aggressive, while the other could be an early-stage or less invasive form.
+Further validation with clinical/histological/genomic data would be needed to confirm these findings.
+
+![K-means Plot](Stage-3/PCA%20and%20K-means%20cluster.png)
+
+---
