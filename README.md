@@ -134,7 +134,8 @@ Clusters 1 (Red) & 3 (Green) likely correspond to different types of benign case
 - Possibility: One cluster may represent completely benign tumors, while the other might include borderline cases with higher risk of progression.  
 
 Clusters 2 (Blue) & 4 (Orange) likely represent malignant cases.
-- Possibility: One may be aggressive, while the other could be an early-stage or less invasive form.
+- Possibility: One may be aggressive, while the other could be an early-stage or less invasive form.  
+
 Further validation with clinical/histological/genomic data would be needed to confirm these findings.
 
 ![K-means Plot](Stage-3/PCA%20and%20K-means%20cluster.png)
