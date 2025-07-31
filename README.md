@@ -1,153 +1,295 @@
-# HackBio-Biocoding-Internship
-## **About the Internship**  
-The **HackBio BioCoding in R and Python** internship is a virtual program designed to equip participants with coding skills for biological data analysis. This program fosters a collaborative learning environment where interns work in teams, engage with mentors, and complete coding-based tasks that enhance their technical proficiency.  The internship is organized into stages, with each stage focusing on a different coding exercise or real-world problem.
+VGhlICoqSGFja0JpbyBCaW9Db2RpbmcgaW4gUiBhbmQgUHl0aG9uKiogaW50
+ZXJuc2hpcCBpcyBhIHZpcnR1YWwgcHJvZ3JhbSBkZXNpZ25lZCB0byBlcXVp
+cCBwYXJ0aWNpcGFudHMgd2l0aCBjb2Rpbmcgc2tpbGxzIGZvciBiaW9sb2dp
+Y2FsIGRhdGEgYW5hbHlzaXMuIFRoaXMgcHJvZ3JhbSBmb3N0ZXJzIGEgY29s
+bGFib3JhdGl2ZSBsZWFybmluZyBlbnZpcm9ubWVudCB3aGVyZSBpbnRlcm5z
+IHdvcmsgaW4gdGVhbXMsIGVuZ2FnZSB3aXRoIG1lbnRvcnMsIGFuZCBjb21w
+bGV0ZSBjb2RpbmctYmFzZWQgdGFza3MgdGhhdCBlbmhhbmNlIHRoZWlyIHRl
+Y2huaWNhbCBwcm9maWNpZW5jeS4gIFRoZSBpbnRlcm5zaGlwIGlzIG9yZ2Fu
+aXplZCBpbnRvIHN0YWdlcywgd2l0aCBlYWNoIHN0YWdlIGZvY3VzaW5nIG9u
+IGEgZGlmZmVyZW50IGNvZGluZyBleGVyY2lzZSBvciByZWFsLXdvcmxkIHBy
+b2JsZW0uDQoNCiMjICoqU3RhZ2UtMCBUYXNrOiBUZWFtIEludHJvZHVjdGlv
+bioqDQpUaGUgZmlyc3QgdGFzayBvZiB0aGlzIGludGVybnNoaXAgcmVxdWly
+ZWQgdXMgdG8gY3JlYXRlIGFuIG9yZ2FuaXplZCByZXByZXNlbnRhdGlvbiBv
+ZiBvdXIgdGVhbSBtZW1iZXJzJyBkZXRhaWxzIHVzaW5nIFIgb3IgUHl0aG9u
+LiBUaGlzIHRhc2sgZW1waGFzaXplZCB0aGUgaW1wb3J0YW5jZSBvZiBzdHJ1
+Y3R1cmluZyBhbmQgbWFuYWdpbmcgZGF0YSBlZmZpY2llbnRseSwgYSBmdW5k
+YW1lbnRhbCBza2lsbCBpbiBjb2RpbmcgZm9yIGJpb2xvZ2ljYWwgYXBwbGlj
+YXRpb25zLg0KDQojIyMgKipUYXNrIGltcGxlbWVudGF0aW9uOioqDQpUaGUg
+Y29kZSBzbmlwcGV0IGZvciB0aGlzIHRhc2ssIGluY2x1ZGVkIGluIHRoaXMg
+cmVwb3NpdG9yeSwgZGVmaW5lcyBhIGRhdGEgZnJhbWUgaW4gUiB0aGF0IHN5
+c3RlbWF0aWNhbGx5IHN0b3JlcyBhbmQgZGlzcGxheXMgb3VyIHRlYW0gbWVt
+YmVyc+KAmSBkZXRhaWxzLiBUaGlzIHByb3ZpZGVzIGEgc3RydWN0dXJlZCBh
+cHByb2FjaCB0byBvcmdhbml6aW5nIGRhdGEsIHNldHRpbmcgdGhlIGZvdW5k
+YXRpb24gZm9yIGhhbmRsaW5nIG1vcmUgY29tcGxleCBkYXRhc2V0cyBpbiBm
+dXR1cmUgdGFza3MuDQoNCkZvciB0aGlzIHRhc2ssIFIgd2FzIHVzZWQgdG8g
+c3RydWN0dXJlIGFuZCBzdG9yZSB0aGUgZGV0YWlscyBvZiBhbGwgdGVhbSBt
+ZW1iZXJzIGluIGFuIG9yZ2FuaXplZCBhbmQgcmVhZGFibGUgZm9ybWF0LiAg
+DQoNCjEuICoqQ3JlYXRpbmcgYSBEYXRhIEZyYW1lKio6ICANCiAgIFRoZSBg
+ZGF0YS5mcmFtZSgpYCBmdW5jdGlvbiB3YXMgdXNlZCB0byBjcmVhdGUgYSBk
+YXRhIGZyYW1lIGNvbnRhaW5pbmcgdGVhbSBtZW1iZXJzIGRldGFpbHMuIEVh
+Y2ggY29sdW1uIHJlcHJlc2VudHMgYSAqKnNwZWNpZmljIGF0dHJpYnV0ZSoq
+IGFuZCBlYWNoICoqcm93IGNvcnJlc3BvbmRzIHRvIGEgdGVhbSBtZW1iZXIq
+Ki4gIA0KDQoyLiAqKkRlZmluaW5nIERhdGEgVXNpbmcgYGMoKWAgRnVuY3Rp
+b24qKjogIA0KICAgSW5zaWRlIHRoZSBgZGF0YS5mcmFtZSgpYCwgdGhlIGMo
+KSBmdW5jdGlvbiB3YXMgdXNlZCB0byBsaXN0IHZhbHVlcyBmb3IgZWFjaCBj
+b2x1bW4uIFRoaXMgYWxsb3dlZCB0byBzdG9yZSBtdWx0aXBsZSBkYXRhIHBv
+aW50cyBlZmZpY2llbnRseSB3aXRoaW4gdGhlIGRhdGEgZnJhbWUuICANCg0K
+My4gKipQcmludGluZyB0aGUgRGF0YSBGcmFtZSoqOiAgDQogICBGaW5hbGx5
+LCB0aGUgYHByaW50KClgIGZ1bmN0aW9uIHdhcyB1c2VkIHRvIGRpc3BsYXkg
+dGhlIHN0cnVjdHVyZWQgZGF0YSBpbiB0aGUgY29uc29sZSwgbWFraW5nIGl0
+IGVhc3kgdG8gcmVhZC4gIA0KDQojIyAqKlN0YWdlLTEgVGFzazogRnVuY3Rp
+b25zIEdhbG9yZSEqKg0KVGhpcyBzdGFnZSByZXF1aXJlZCB0byB3cml0ZSBm
+dW5jdGlvbnMgZm9yIEROQSB0cmFuc2xhdGlvbiwgc2ltdWxhdGluZyBsb2dp
+c3RpYyBwb3B1bGF0aW9uIGdyb3d0aCBjdXJ2ZSwgYW5kIHNlcXVlbmNlIGNv
+bXBhcmlzb24uIEJlbG93IGlzIGEgZGV0YWlsZWQgZGVzY3JpcHRpb24gb2Yg
+dGhlIHRhc2tzIGFuZCBmdW5jdGlvbnMgaW1wbGVtZW50ZWQgdXNpbmcgUi4N
+Cg0KIyMjICoqVGFzayBpbXBsZW1lbnRhdGlvbjoqKg0KVGhlIGNvZGUgc25p
+cHBldCBmb3IgdGhpcyB0YXNrIGlzIGluY2x1ZGVkIGluIFN0YWdlLTEgZm9s
+ZGVyLg0KDQoqKkZ1bmN0aW9uIGZvciBETkEgdG8gUHJvdGVpbiBUcmFuc2xh
+dGlvbioqICANClRoaXMgdGFzayByZXF1aXJlZCB3cml0aW5nIGEgZnVuY3Rp
+b24sIHRyYW5zbGF0b3IoKSwgdGhhdCBjb252ZXJ0cyBhIGdpdmVuIEROQSBz
+ZXF1ZW5jZSBpbnRvIGEgcHJvdGVpbiBzZXF1ZW5jZSB1c2luZyB0aGUgc3Rh
+bmRhcmQgZ2VuZXRpYyBjb2RlIGFuZCB1c2VzIG5jaGFyKCkgdG8gY2hlY2sg
+aWYNCnRoZSBzZXF1ZW5jZSBsZW5ndGggaXMgYSBtdWx0aXBsZSBvZiB0aHJl
+ZS4gU3BsaXRzIHRoZSBETkEgc2VxdWVuY2UgaW50byBjb2RvbnMgdXNpbmcg
+c3Vic3RyaW5nKCkuIE1hcHMgY29kb25zIHRvIHRoZWlyIGNvcnJlc3BvbmRp
+bmcgYW1pbm8gYWNpZHMgdXNpbmcgYSBwcmVkZWZpbmVkIGNvZG9uDQp0YWJs
+ZSBhbmQgbWF0Y2goKS4gUmV0dXJucyB0aGUgdHJhbnNsYXRlZCBwcm90ZWlu
+IHNlcXVlbmNlIGFzIGEgdmVjdG9yIG9mIGFtaW5vIGFjaWQgYWJicmV2aWF0
+aW9ucy4NCg0KKipGdW5jdGlvbiBmb3IgTG9naXN0aWMgUG9wdWxhdGlvbiBH
+cm93dGggQ3VydmUgU2ltdWxhdGlvbioqICANClRoaXMgdGFzayByZXF1aXJl
+ZCB3cml0aW5nIGEgZnVuY3Rpb24sIGxvZ2lzdGljX2dyb3d0aF9jdXJ2ZSgp
+LCB0byBzaW11bGF0ZSBhbmQgZ2VuZXJhdGUgYSBsb2dpc3RpYyBwb3B1bGF0
+aW9uIGdyb3d0aCBjdXJ2ZS4gVGhlIGZ1bmN0aW9uIGluaXRpYWxpemVzIGEg
+bnVtZXJpYyB2ZWN0b3IgdXNpbmcgbnVtZXJpYygpIHRvIHN0b3JlIHBvcHVs
+YXRpb24gc2l6ZXMgYXQgZWFjaCB0aW1lIHBvaW50LiBJdGVyYXRlcyB0aHJv
+dWdoIHRpbWUgcG9pbnRzIHVzaW5nIHNlcV9hbG9uZygpIGFuZCBjbGFzc2lm
+aWVzIGdyb3d0aCBpbnRvIHRocmVlIHBoYXNlczogTGFnIHBoYXNlOiBQb3B1
+bGF0aW9uIHJlbWFpbnMgY29uc3RhbnQgKFBpKSwgTG9nIHBoYXNlOiBHcm93
+dGggZm9sbG93cyB0aGUgbG9naXN0aWMgZXF1YXRpb24gdXNpbmcgZXhwKCks
+IFN0YXRpb25hcnkgcGhhc2U6IFBvcHVsYXRpb24gcmVhY2hlcyB0aGUgY2Fy
+cnlpbmcgY2FwYWNpdHkgKEspLiBVc2VzIHJ1bmlmKCkgdG8gaW50cm9kdWNl
+IHJhbmRvbW5lc3MgaW4gdGhlIGxhZyBhbmQgZXhwb25lbnRpYWwgcGhhc2Ug
+ZHVyYXRpb25zLiBTdG9yZXMgcmVzdWx0cyBpbiBhIG1hdHJpeCAobWF0cml4
+KCkpIGFuZCBjb252ZXJ0cyBpdCBpbnRvIGEgZGF0YWZyYW1lIChhcy5kYXRh
+LmZyYW1lKCkpLiBUaGlzIGZ1bmN0aW9uIG1vZGVscyBwb3B1bGF0aW9uIGR5
+bmFtaWNzIGFuZCBjYW4gYmUgYXBwbGllZCB0byB2YXJpb3VzIGJpb2xvZ2lj
+YWwgZ3Jvd3RoIHN0dWRpZXMsIGluY2x1ZGluZyBiYWN0ZXJpYWwgY2VsbCBn
+cm93dGggYW5kIGVudmlyb25tZW50YWwgcG9wdWxhdGlvbiBjaGFuZ2VzLg0K
+DQoqKkdlbmVyYXRpbmcgYSBEYXRhZnJhbWUgd2l0aCAxMDAgRGlmZmVyZW50
+IEdyb3d0aCBDdXJ2ZXMqKiAgDQpUaGlzIHRhc2sgcmVxdWlyZWQgd3JpdGlu
+ZyBhIHNjcmlwdCB0byBnZW5lcmF0ZSBhIGRhdGFzZXQgY29udGFpbmluZyAx
+MDAgZGlmZmVyZW50IGxvZ2lzdGljIGdyb3d0aCBjdXJ2ZXMgdXNpbmcgdGhl
+IHByZXZpb3VzbHkgZGVmaW5lZCBsb2dpc3RpY19ncm93dGhfY3VydmUoKSBm
+dW5jdGlvbi4gVGhlDQpzY3JpcHQgaW5pdGlhbGl6ZXMgYW4gZW1wdHkgZGF0
+YWZyYW1lIChkYXRhLmZyYW1lKCkpIHRvIHN0b3JlIGFsbCBncm93dGggY3Vy
+dmVzLiBEZWZpbmVzIGtleSBncm93dGggcGFyYW1ldGVycyAoUGksIHIsIEsp
+IGFuZCBpbnRyb2R1Y2VzIHZhcmlhYmlsaXR5IGluIHRoZSBsYWcgYW5kDQpl
+eHBvbmVudGlhbCBwaGFzZXMgdXNpbmcgcnVuaWYoKS4gVXNlcyBhIGZvciBs
+b29wIHRvIGdlbmVyYXRlIDEwMCBncm93dGggY3VydmVzLCBlYWNoIHdpdGgg
+YSB1bmlxdWUgY3VydmVfbnVtIGlkZW50aWZpZXIuIEFwcGVuZHMgZWFjaCBn
+ZW5lcmF0ZWQgY3VydmUgdG8gdGhlIGRhdGFmcmFtZSB1c2luZw0KcmJpbmQo
+KS4gVGhlIGZpbmFsIGRhdGFzZXQgcHJvdmlkZXMgYSBkaXZlcnNlIHNldCBv
+ZiBwb3B1bGF0aW9uIGdyb3d0aCBjdXJ2ZXMsIHVzZWZ1bCBmb3IgYW5hbHl6
+aW5nIGJpb2xvZ2ljYWwgZ3Jvd3RoIHRyZW5kcyBhbmQgdmFyaWFiaWxpdHku
+DQoNCioqVGltZSB0byByZWFjaCA4MCUgb2YgdGhlIG1heGltdW0gZ3Jvd3Ro
+KiogIA0KVGhpcyB0YXNrIGludm9sdmVkIHdyaXRpbmcgYSBmdW5jdGlvbiB0
+byBjYWxjdWxhdGUgdGhlIHRpbWUgcmVxdWlyZWQgZm9yIGEgcG9wdWxhdGlv
+biB0byByZWFjaCA4MCUgb2YgaXRzIGNhcnJ5aW5nIGNhcGFjaXR5IHVzaW5n
+IHRoZSBsb2dpc3RpYyBncm93dGggbW9kZWwuIFRoZSBmdW5jdGlvbiwNCnRp
+bWVfdG9fODAoKSwgYWNjZXB0cyB0aGUgaW5pdGlhbCBwb3B1bGF0aW9uIHNp
+emUsIGludHJpbnNpYyBncm93dGggcmF0ZSwgYW5kIGNhcnJ5aW5nIGNhcGFj
+aXR5IGFzIGlucHV0cywgY29tcHV0ZXMgODAlIG9mIHRoZSBjYXJyeWluZyBj
+YXBhY2l0eSwgYW5kIHRoZW4gZGV0ZXJtaW5lcyB0aGUNCnRpbWUgYmFzZWQg
+b24gYSByZWFycmFuZ2VkIGxvZ2lzdGljIGdyb3d0aCBlcXVhdGlvbi4gDQoN
+CioqQ2FsY3VsYXRlIGhhbW1pbmcgZGlzdGFuY2UqKiAgDQpUaGlzIHRhc2sg
+aW52b2x2ZWQgd3JpdGluZyBhIGZ1bmN0aW9uIHRvIGNvbXB1dGUgdGhlIEhh
+bW1pbmcgZGlzdGFuY2UgYmV0d2VlbiB0d28gc3RyaW5ncy4gVGhlIHNjcmlw
+dCBkZWZpbmVzIGEgZnVuY3Rpb24gaGFtbWluZ19kaXN0YW5jZSgpIHRoYXQg
+Y2FsY3VsYXRlcyB0aGUgSGFtbWluZw0KZGlzdGFuY2UgYmV0d2VlbiB0d28g
+c3RyaW5ncy4gVXNlcyBuY2hhcigpIHRvIGRldGVybWluZSBzdHJpbmcgbGVu
+Z3RocywgbWF4KCkgdG8gZ2V0IHRoZSBsb25nZXIgc3RyaW5nIGxlbmd0aCB3
+aGVuIHBhZGRpbmcgaXMgbmVlZGVkLCBhbmQgdW5saXN0KCkgKHdpdGggc3Ry
+c3BsaXQpIHRvIGNvbXBhcmUNCnRoZSBzdHJpbmdzIGNoYXJhY3Rlci1ieS1j
+aGFyYWN0ZXIuDQoNCiMjICoqU3RhZ2UtMiBUYXNrOiBEYXRhIEludGVycHJl
+dGF0aW9uIGFuZCBWaXN1YWxpemF0aW9uKioNCiMjIyAqKlJOQS1TZXEgRGlm
+ZmVyZW50aWFsIEV4cHJlc3Npb24gQW5hbHlzaXMqKg0KVGhpcyB0YXNrIHJl
+cXVpcmVkIGFuYWx5emluZyBhbiBSTkEtU2VxIGRhdGFzZXQgdG8gaWRlbnRp
+ZnkgZGlmZmVyZW50aWFsbHkgZXhwcmVzc2VkIGdlbmVzIGJldHdlZW4gYSBk
+aXNlYXNlZCBjZWxsIGxpbmUgYW5kIGEgZGlzZWFzZWQgY2VsbCBsaW5lIHRy
+ZWF0ZWQgd2l0aCBDb21wb3VuZCBYLg0KQmVsb3cgaXMgYSBkZXRhaWxlZCBk
+ZXNjcmlwdGlvbiBvZiB0aGUgdGFza3MgYW5kIGZ1bmN0aW9ucyBpbXBsZW1l
+bnRlZCB1c2luZyBSLg0KDQojIyMgKipUYXNrIGltcGxlbWVudGF0aW9uOioq
+DQpUaGUgY29kZSBzbmlwcGV0IGZvciB0aGlzIHRhc2sgaXMgaW5jbHVkZWQg
+aW4gU3RhZ2UtMiBmb2xkZXIuIEEgdm9sY2FubyBwbG90IHdhcyBnZW5lcmF0
+ZWQgdXNpbmcgYmFzZSBSIHBsb3QoKSBmdW5jdGlvbiwgdG8gdmlzdWFsaXpl
+IGRpZmZlcmVudGlhbGx5IGV4cHJlc3NlZCBnZW5lcyBiYXNlZCBvbg0KTG9n
+MiBGb2xkIENoYW5nZSBhbmQgc3RhdGlzdGljYWwgc2lnbmlmaWNhbmNlICgt
+bG9nMTAocC12YWx1ZSkpLiBUaGUgZGF0YXNldCB3YXMgZmlsdGVyZWQgdG8g
+ZXh0cmFjdCBnZW5lcyB0aGF0IG1ldCB0aGUgc2lnbmlmaWNhbmNlIGNyaXRl
+cmlhLiBUaGUgdG9wIDUgbW9zdCBzaWduaWZpY2FudA0KdXByZWd1bGF0ZWQg
+YW5kIGRvd25yZWd1bGF0ZWQgZ2VuZXMgd2VyZSBkZXRlcm1pbmVkIGJhc2Vk
+IG9uIHAtdmFsdWVzLiBUaGUgZnVuY3Rpb25zIG9mIHRoZSB0b3AgZGlmZmVy
+ZW50aWFsbHkgZXhwcmVzc2VkIGdlbmVzIHdlcmUgcmV0cmlldmVkIHVzaW5n
+IEdlbmVDYXJkcy4NCg0KKipVcHJlZ3VsYXRlZCBHZW5lcyBGdW5jdGlvbnMq
+Kg0KLSBFTUlMSU4yOiBlbmNvZGVzIGEgcHJvdGVpbiBpbnZvbHZlZCBpbiBl
+eHRyYWNlbGx1bGFyIG1hdHJpeCBvcmdhbml6YXRpb24gYW5kIGNlbGwgYWRo
+ZXNpb24uIEl0IHBsYXlzIGEgcm9sZSBpbiByZWd1bGF0aW5nIGNlbGwgcHJv
+bGlmZXJhdGlvbiBhbmQgYXBvcHRvc2lzLg0KLSBQT1UzRjQ6IGVuY29kZXMg
+YSB0cmFuc2NyaXB0aW9uIGZhY3RvciBjcml0aWNhbCBmb3IgdGhlIGRldmVs
+b3BtZW50IG9mIHRoZSBpbm5lciBlYXIgYW5kIGNlcnRhaW4gbmV1cmFsIHN0
+cnVjdHVyZXMuIE11dGF0aW9ucyBhcmUgYXNzb2NpYXRlZCB3aXRoIGhlYXJp
+bmcgaW1wYWlybWVudHMuDQotIExPQzI4NTk1NDogYW4gUk5BIEdlbmUsIGFu
+ZCBpcyBhZmZpbGlhdGVkIHdpdGggdGhlIGxuY1JOQSBjbGFzcy4gRGlzZWFz
+ZXMgYXNzb2NpYXRlZCBpbmNsdWRlIEdsaW9tYSBTdXNjZXB0aWJpbGl0eSAx
+IGFuZCBHYXN0cmljIENhbmNlci4NCi0gVkVQSDE6IHJlc3VsdHMgaW4gaW1w
+YWlyZWQgVEdGLWJldGEgc2lnbmFsaW5nLg0KLSBEVEhEMTogZW5jb2RlcyBh
+IHByb3RlaW4gY29udGFpbmluZyBhIGRlYXRoIGRvbWFpbiwgd2hpY2ggaXMg
+aW1wbGljYXRlZCBpbiBhcG9wdG90aWMgc2lnbmFsaW5nIHBhdGh3YXlzIGFu
+ZCBvdGhlciBjZWxsdWxhciBwcm9jZXNzZXMuDQoNCioqRG93bnJlZ3VsYXRl
+ZCBHZW5lcyBGdW5jdGlvbnMqKg0KLSBUQlg1OiBlbmNvZGVzIGEgdHJhbnNj
+cmlwdGlvbiBmYWN0b3IgZXNzZW50aWFsIGZvciBoZWFydCBkZXZlbG9wbWVu
+dCBhbmQgbGltYiBwYXR0ZXJuIGZvcm1hdGlvbi4gTXV0YXRpb25zIGNhbiBs
+ZWFkIHRvIGNvbmdlbml0YWwgZGlzb3JkZXJzIGFmZmVjdGluZyB0aGUgaGVh
+cnQgYW5kIGxpbWJzLg0KLSBMQU1BMjogZW5jb2RlcyBsYW1pbmluIHN1YnVu
+aXQgYWxwaGEtMiwgYSBjb21wb25lbnQgb2YgdGhlIGV4dHJhY2VsbHVsYXIg
+bWF0cml4LiBJdCBtZWRpYXRlcyBjZWxsIGF0dGFjaG1lbnQsIG1pZ3JhdGlv
+biwgYW5kIHRpc3N1ZSBvcmdhbml6YXRpb24gZHVyaW5nIGVtYnJ5b25pYw0K
+ICBkZXZlbG9wbWVudC4gTXV0YXRpb25zIGFyZSBsaW5rZWQgdG8gbXVzY3Vs
+YXIgZHlzdHJvcGh5Lg0KLSBDQVYyOiBlbmNvZGVzIGNhdmVvbGluLTIsIGEg
+cHJvdGVpbiBpbnZvbHZlZCBpbiB0aGUgZm9ybWF0aW9uIG9mIGNhdmVvbGFl
+IChzbWFsbCBpbnZhZ2luYXRpb25zKSBvbiB0aGUgY2VsbCBtZW1icmFuZS4g
+SXQgcGxheXMgYSByb2xlIGluIHNpZ25hbCB0cmFuc2R1Y3Rpb24gYW5kIG1h
+eQ0KICBmdW5jdGlvbiBhcyBhIHR1bW9yIHN1cHByZXNzb3IuDQotIElGSVRN
+MTogZW5jb2RlcyBhIHByb3RlaW4gdGhhdCByZXN0cmljdHMgY2VsbHVsYXIg
+ZW50cnkgb2YgdmFyaW91cyB2aXJhbCBwYXRob2dlbnMsIGluY2x1ZGluZyBp
+bmZsdWVuemEgQSB2aXJ1cywgRWJvbGEgdmlydXMsIGFuZCBTQVJTLUNvVi0y
+LCB0aGVyZWJ5IHBsYXlpbmcgYSByb2xlIGluDQogIGlubmF0ZSBpbW11bml0
+eS4NCi0gVE5OOiBlbmNvZGVzIHRlbmFzY2luIE4sIGFuIGV4dHJhY2VsbHVs
+YXIgbWF0cml4IHByb3RlaW4gdGhhdCwgaW4gdHVtb3JzLCBzdGltdWxhdGVz
+IGFuZ2lvZ2VuZXNpcyBieSBwcm9tb3RpbmcgZW5kb3RoZWxpYWwgY2VsbCBl
+bG9uZ2F0aW9uLCBtaWdyYXRpb24sIGFuZCBzcHJvdXRpbmcuDQoNCioqUmVz
+dWx0cyBJbnRlcnByZXRhdGlvbioqICANClRoZSByZXN1bHRzIHN1Z2dlc3Qg
+dGhhdCBDb21wb3VuZCBYIGluZmx1ZW5jZXMgY2VsbCBzaWduYWxpbmcsIGFw
+b3B0b3NpcywgZXh0cmFjZWxsdWxhciBtYXRyaXggcmVtb2RlbGluZywgYW5k
+IGltbXVuZSByZXNwb25zZS4gVXByZWd1bGF0ZWQgZ2VuZXMgaW5kaWNhdGUg
+ZW5oYW5jZWQgY2VsbA0KcmVtb2RlbGluZyBhbmQgYXBvcHRvc2lzLCB3aGls
+ZSBkb3ducmVndWxhdGVkIGdlbmVzIHN1Z2dlc3QgcmVkdWNlZCBpbW11bmUg
+c2lnbmFsaW5nLCBhZGhlc2lvbiwgYW5kIHR1bW9yLXJlbGF0ZWQgcGF0aHdh
+eXMuIFRoaXMgbWF5IGhhdmUgaW1wbGljYXRpb25zIGZvciBjYW5jZXIgdHJl
+YXRtZW50LA0KdGlzc3VlIHJlcGFpciwgb3IgaW1tdW5lIG1vZHVsYXRpb24u
+DQoNCiMjICoqU3RhZ2UtMyBUYXNrOiBUdW1vciBDbGFzc2lmaWNhdGlvbiBV
+c2luZyBQQ0EgYW5kIEstTWVhbnMgQ2x1c3RlcmluZyoqDQpUaGUgb2JqZWN0
+aXZlIG9mIHRoaXMgdGFzayB3YXMgdG8gY2xhc3NpZnkgdHVtb3JzIGFzIGVp
+dGhlciBiZW5pZ24gb3IgbWFsaWduYW50IHVzaW5nIFByaW5jaXBhbCBDb21w
+b25lbnQgQW5hbHlzaXMgKFBDQSkgYW5kIEstTWVhbnMgY2x1c3RlcmluZy4g
+U3BlY2lmaWNhbGx5LA0KdGhlIGdvYWxzIHdlcmU6DQotIERpbWVuc2lvbmFs
+aXR5IHJlZHVjdGlvbiB1c2luZyBQQ0EgdG8gdmlzdWFsaXplIHBhdHRlcm5z
+IGluIHRoZSBkYXRhc2V0Lg0KLSBBcHBseWluZyBLLU1lYW5zIGNsdXN0ZXJp
+bmcgdG8gY2xhc3NpZnkgYW5kIGdyb3VwIHRoZSBwYXRpZW50cy4NCi0gRGV0
+ZXJtaW5pbmcgaWYgdGhlcmUgYXJlIHBvdGVudGlhbCBzdWJjbGFzc2VzIHdp
+dGhpbiB0aGUgZGF0YXNldC4NCg0KIyMjICoqVGFzayBpbXBsZW1lbnRhdGlv
+bjoqKg0KVGhlIGNvZGUgc25pcHBldCBmb3IgdGhpcyB0YXNrIGlzIGluY2x1
+ZGVkIGluIFN0YWdlLTMgZm9sZGVyLiBUaGUgY2FuY2VyIGRhdGFzZXQgd2Fz
+IGluc3BlY3RlZCBmb3IgbWlzc2luZyB2YWx1ZXMsIGFuZCBuZWNlc3Nhcnkg
+ZGF0YSB0eXBlIGNvbnZlcnNpb25zIHdlcmUgYXBwbGllZC4gVG8NCmVuc3Vy
+ZSBmYWlyIGNvbXBhcmlzb25zIGluIFBDQSBhbmQgY2x1c3RlcmluZywgdGhl
+IGZlYXR1cmVzIHdlcmUgc3RhbmRhcmRpemVkIHVzaW5nIHRoZSBzY2FsZSgp
+IGZ1bmN0aW9uLiANCg0KKipQcmluY2lwYWwgQ29tcG9uZW50IEFuYWx5c2lz
+IChQQ0EpKiogIA0KUENBIHdhcyBhcHBsaWVkIHRvIHRyYW5zZm9ybSB0aGUg
+aGlnaC1kaW1lbnNpb25hbCBkYXRhc2V0IGludG8gYSBsb3dlci1kaW1lbnNp
+b25hbCBzcGFjZSwgY2FwdHVyaW5nIHRoZSBtb3N0IHNpZ25pZmljYW50IHZh
+cmlhbmNlIGluIHRoZSBkYXRhLiBUaGUgZmlyc3QgdHdvIHByaW5jaXBhbA0K
+Y29tcG9uZW50cyBleHBsYWluZWQgYSBzdWJzdGFudGlhbCBwb3J0aW9uIG9m
+IHRoZSB2YXJpYW5jZSwgZW5hYmxpbmcgZWZmZWN0aXZlIHZpc3VhbGl6YXRp
+b24uDQoNCioqUENBIEludGVycHJldGF0aW9uKioNCg0KIVtQQ0EgUGxvdF0o
+U3RhZ2UtMy9QQ0ElMjBQbG90LnBuZykNCg0KKipGaWd1cmUgMTogUENBIFBs
+b3Qgb2YgUEMxIHZzIFBDMioqICANClRoZSBQQ0EgcGxvdCBpbGx1c3RyYXRl
+cyB0aGUgZGlzdHJpYnV0aW9uIG9mIGJlbmlnbiAoYmx1ZSBjaXJjbGVzKSBh
+bmQgbWFsaWduYW50ICh5ZWxsb3cgdHJpYW5nbGVzKSBjYXNlcyBhY3Jvc3Mg
+dHdvIHByaW5jaXBhbCBjb21wb25lbnRzLiBXaGlsZSB0aGUgdHdvIGdyb3Vw
+cw0KZXhoaWJpdCBzb21lIHNlcGFyYXRpb24sIHRoZXJlIGlzIGFuIG9ic2Vy
+dmFibGUgb3ZlcmxhcCwgaW5kaWNhdGluZyB0aGF0IHNvbWUgYmVuaWduIGFu
+ZCBtYWxpZ25hbnQgY2FzZXMgc2hhcmUgc2ltaWxhciBjaGFyYWN0ZXJpc3Rp
+Y3MgaW4gdGhpcyByZWR1Y2VkIGZlYXR1cmUgc3BhY2UuIFRoaXMNCnN1Z2dl
+c3RzIHRoYXQgUENBIGFsb25lIGlzIG5vdCBzdWZmaWNpZW50IGZvciBwZXJm
+ZWN0IGNsYXNzaWZpY2F0aW9uLCBidXQgaXQgcHJvdmlkZXMgYSBzb2xpZCBm
+b3VuZGF0aW9uIGZvciBmdXJ0aGVyIGNsdXN0ZXJpbmcgbWV0aG9kcy4NCg0K
+LS0tDQoNCioqSy1NZWFucyBDbHVzdGVyaW5nKiogIA0KSW5pdGlhbGx5LCBL
+LU1lYW5zIGNsdXN0ZXJpbmcgd2FzIHBlcmZvcm1lZCB3aXRoIEsgPSAyLCBh
+c3N1bWluZyB0aGF0IHRoZSBkYXRhc2V0IG5hdHVyYWxseSBkaXZpZGVzIGlu
+dG8gdHdvIGdyb3VwczogYmVuaWduIGFuZCBtYWxpZ25hbnQuIFRoZSB2aXN1
+YWxpemF0aW9uIG9mIEsgPSAyIChzaG93bg0KaW4gdGhlIGF0dGFjaGVkIHBs
+b3QpIGluZGljYXRlcyB0aGF0IHdoaWxlIHRoZSBjbHVzdGVyaW5nIGNhcHR1
+cmVzIHNvbWUgc2VwYXJhdGlvbiBiZXR3ZWVuIGdyb3VwcywgdGhlcmUgaXMg
+c2lnbmlmaWNhbnQgb3ZlcmxhcCBiZXR3ZWVuIHRoZSBjbHVzdGVycy4NCg0K
+IVtLLW1lYW5zIFBsb3RdKFN0YWdlLTMvSy1tZWFucyUyMChLPTIpLnBuZykN
+Cg0KKipGaWd1cmUgMjogSy1tZWFucyBQbG90IHdpdGggSyA9IDIqKiAgDQpU
+aGUgY2x1c3RlciBtYXJrZWQgaW4gcmVkIGNvbnRhaW5zIGEgbWl4IG9mIGJv
+dGggYmVuaWduIGFuZCBtYWxpZ25hbnQgY2FzZXMsIHN1Z2dlc3RpbmcgdGhh
+dCBzb21lIG1hbGlnbmFudCBjYXNlcyBzaGFyZSBmZWF0dXJlIHNpbWlsYXJp
+dGllcyB3aXRoIGJlbmlnbiBjYXNlcy4gVGhlIHNlY29uZA0KY2x1c3RlciAo
+Ymx1ZSkgaXMgbW9yZSBjb21wYWN0LCBsaWtlbHkgcmVwcmVzZW50aW5nIGEg
+c3Vic2V0IG9mIHR1bW9ycyB3aXRoIG1vcmUgZGlzdGluY3QgY2hhcmFjdGVy
+aXN0aWNzLg0KDQotLS0NCg0KVG8gcmVmaW5lIHRoZSBjbHVzdGVyaW5nLCBl
+bGJvdyBtZXRob2Qgd2FzIGFwcGxpZWQgdG8gZGV0ZXJtaW5lIHRoZSBvcHRp
+bWFsIG51bWJlciBvZiBjbHVzdGVycywgd2hpY2ggc3VnZ2VzdGVkIEsgPSA0
+LCBhbGxvd2luZyBmb3IgdGhlIHBvc3NpYmlsaXR5IG9mIG1vcmUgbnVhbmNl
+ZCBzdWJncm91cA0KY2xhc3NpZmljYXRpb24uIEstTWVhbnMgY2x1c3Rlcmlu
+ZyB3YXMgdGhlbiBwZXJmb3JtZWQgd2l0aCBmb3VyIGNsdXN0ZXJzLCBhbmQg
+dGhpcyByZXN1bHRlZCBpbiBhIG1vcmUgZGV0YWlsZWQgc2VwYXJhdGlvbiwg
+cG90ZW50aWFsbHkgaWRlbnRpZnlpbmcgc3VidHlwZXMgd2l0aGluIGJlbmln
+bg0KYW5kIG1hbGlnbmFudCBjYXNlcy4gVGhlc2Ugc3VidHlwZXMgY291bGQg
+Y29ycmVzcG9uZCB0byBkaWZmZXJlbnQgc3RhZ2VzIG9mIHR1bW9yIHByb2dy
+ZXNzaW9uLCByZWZsZWN0aW5nIHZhcmlhdGlvbnMgaW4gdHVtb3IgYWdncmVz
+c2l2ZW5lc3MsIGNlbGx1bGFyIGNvbXBvc2l0aW9uLCBvciANCm1vbGVjdWxh
+ciBmZWF0dXJlcy4NCg0KKipJbnRlcnByZXRhdGlvbiBvZiBLLW1lYW5zIGNs
+dXN0ZXJpbmcgd2l0aCBLID0gNCBwbG90KiogIA0KDQpJbiB0aGUgcGxvdCBi
+ZWxvdzogIA0KQ2x1c3RlcnMgMSAoUmVkKSAmIDMgKEdyZWVuKSBsaWtlbHkg
+Y29ycmVzcG9uZCB0byBkaWZmZXJlbnQgdHlwZXMgb2YgYmVuaWduIGNhc2Vz
+Lg0KLSBQb3NzaWJpbGl0eTogT25lIGNsdXN0ZXIgbWF5IHJlcHJlc2VudCBj
+b21wbGV0ZWx5IGJlbmlnbiB0dW1vcnMsIHdoaWxlIHRoZSBvdGhlciBtaWdo
+dCBpbmNsdWRlIGJvcmRlcmxpbmUgY2FzZXMgd2l0aCBoaWdoZXIgcmlzayBv
+ZiBwcm9ncmVzc2lvbi4gIA0KDQpDbHVzdGVycyAyIChCbHVlKSAmIDQgKE9y
+YW5nZSkgbGlrZWx5IHJlcHJlc2VudCBtYWxpZ25hbnQgY2FzZXMuDQotIFBv
+c3NpYmlsaXR5OiBPbmUgbWF5IGJlIGFnZ3Jlc3NpdmUsIHdoaWxlIHRoZSBv
+dGhlciBjb3VsZCBiZSBhbiBlYXJseS1zdGFnZSBvciBsZXNzIGludmFzaXZl
+IGZvcm0uICANCg0KRnVydGhlciB2YWxpZGF0aW9uIHdpdGggY2xpbmljYWwv
+aGlzdG9sb2dpY2FsL2dlbm9taWMgZGF0YSB3b3VsZCBiZSBuZWVkZWQgdG8g
+Y29uZmlybSB0aGVzZSBmaW5kaW5ncy4NCg0KIVtLLW1lYW5zIFBsb3RdKFN0
+YWdlLTMvUENBJTIwYW5kJTIwSy1tZWFucyUyMGNsdXN0ZXIucG5nKQ0KDQoq
+KkZpZ3VyZSAzOiBQQ0EgYW5kIEstbWVhbnMgUGxvdCB3aXRoIEsgPSA0KioN
+Cg0KLS0tDQoNCiMjIyAqKkNvbmNsdXNpb24qKiAgDQotIFBDQSBlZmZlY3Rp
+dmVseSByZWR1Y2VkIHRoZSBkYXRhc2V04oCZcyBkaW1lbnNpb25hbGl0eSwg
+YWxsb3dpbmcgZm9yIGVhc2llciB2aXN1YWxpemF0aW9uIGFuZCBpbnRlcnBy
+ZXRhdGlvbiBvZiBwYXRpZW50IGdyb3VwaW5ncy4gV2hpbGUgaXQgcmV2ZWFs
+ZWQgc29tZSBzZXBhcmF0aW9uIGJldHdlZW4NCmJlbmlnbiBhbmQgbWFsaWdu
+YW50IGNhc2VzLCBmZWF0dXJlIG92ZXJsYXAgaW5kaWNhdGVkIHRoZSBuZWVk
+IGZvciBhZGRpdGlvbmFsIGNsYXNzaWZpY2F0aW9uIG1ldGhvZHMuICANCi0g
+Sy1NZWFucyBjbHVzdGVyaW5nLCB3aXRoIEs9NCwgaWRlbnRpZmllZCB0d28g
+cHJpbWFyeSBiZW5pZ24gY2x1c3RlcnMgYW5kIHR3byBtYWxpZ25hbnQgY2x1
+c3RlcnMsIHN1Z2dlc3RpbmcgcG90ZW50aWFsIHR1bW9yIHN1YnR5cGVzIG9y
+IGRpZmZlcmVudCBzdGFnZXMgb2YgcHJvZ3Jlc3Npb24uIFRoZSBvdmVybGFw
+IGJldHdlZW4gc29tZSBjbHVzdGVycyBoaWdobGlnaHRzIHRoZSBjb21wbGV4
+aXR5IG9mIGRpc3Rpbmd1aXNoaW5nIGNhc2VzIGJhc2VkIHNvbGVseSBvbiB1
+bnN1cGVydmlzZWQgbGVhcm5pbmcuDQoNCioqQ2x1c3RlcmluZyBQZXJmb3Jt
+YW5jZSBhbmQgUmVmaW5lbWVudCoqICAgIA0KVGhpcyBhbmFseXNpcyBpbGx1
+c3RyYXRlcyBob3cgdW5zdXBlcnZpc2VkIG1hY2hpbmUgbGVhcm5pbmcgdGVj
+aG5pcXVlcyBjYW4gdW5jb3ZlciBoaWRkZW4gcGF0dGVybnMgaW4gbWVkaWNh
+bCBkYXRhLCBvZmZlcmluZyBwb3RlbnRpYWwgaW1wcm92ZW1lbnRzIGluIGRp
+YWdub3N0aWMgYWNjdXJhY3kNCmFuZCBoZWxwaW5nIHRvIGlkZW50aWZ5IHNp
+Z25pZmljYW50IHN1Ymdyb3VwcyB3aXRoaW4gZGlhZ25vc3RpYyBjYXRlZ29y
+aWVzLiBXaGlsZSBpbml0aWFsIHRlc3RzIHNob3dlZCB0aGF0IEs9MiBwcm92
+aWRlZCBhIGJhc2ljIHNlcGFyYXRpb24sIGluY3JlYXNpbmcgdG8gSz0zIG9y
+IEs9NCBoZWxwZWQNCnVuY292ZXIgbW9yZSBudWFuY2VkIHN1Ymdyb3Vwcywg
+c3VjaCBhcyBib3JkZXJsaW5lIGNhc2VzIG9yIGRpZmZlcmVudCBtYWxpZ25h
+bmN5IHN0YWdlcy4gQnkgaW50ZWdyYXRpbmcgUENBIHdpdGggSy1NZWFucyBj
+bHVzdGVyaW5nLCB3ZSBnYWluZWQgZGVlcGVyIGluc2lnaHRzIGludG8gdHVt
+b3INCmNsYXNzaWZpY2F0aW9uIHBhdHRlcm5zLCBsYXlpbmcgdGhlIGdyb3Vu
+ZHdvcmsgZm9yIGZ1dHVyZSByZWZpbmVtZW50cyB1c2luZyBzdXBlcnZpc2Vk
+IGxlYXJuaW5nIHRlY2huaXF1ZXMgKHN1Y2ggYXMgcmFuZG9tIGZvcmVzdCkg
+Zm9yIGltcHJvdmVkIGFjY3VyYWN5LiANCg==
 
-## **Stage-0 Task: Team Introduction**
-The first task of this internship required us to create an organized representation of our team members' details using R or Python. This task emphasized the importance of structuring and managing data efficiently, a fundamental skill in coding for biological applications.
 
-### **Task implementation:**
-The code snippet for this task, included in this repository, defines a data frame in R that systematically stores and displays our team members’ details. This provides a structured approach to organizing data, setting the foundation for handling more complex datasets in future tasks.
-
-For this task, R was used to structure and store the details of all team members in an organized and readable format.  
-
-1. **Creating a Data Frame**:  
-   The `data.frame()` function was used to create a data frame containing team members details. Each column represents a **specific attribute** and each **row corresponds to a team member**.  
-
-2. **Defining Data Using `c()` Function**:  
-   Inside the `data.frame()`, the c() function was used to list values for each column. This allowed to store multiple data points efficiently within the data frame.  
-
-3. **Printing the Data Frame**:  
-   Finally, the `print()` function was used to display the structured data in the console, making it easy to read.  
-
-## **Stage-1 Task: Functions Galore!**
-This stage required to write functions for DNA translation, simulating logistic population growth curve, and sequence comparison. Below is a detailed description of the tasks and functions implemented using R.
-
-### **Task implementation:**
-The code snippet for this task is included in Stage-1 folder.
-
-**Function for DNA to Protein Translation**  
-This task required writing a function, translator(), that converts a given DNA sequence into a protein sequence using the standard genetic code and uses nchar() to check if
-the sequence length is a multiple of three. Splits the DNA sequence into codons using substring(). Maps codons to their corresponding amino acids using a predefined codon
-table and match(). Returns the translated protein sequence as a vector of amino acid abbreviations.
-
-**Function for Logistic Population Growth Curve Simulation**  
-This task required writing a function, logistic_growth_curve(), to simulate and generate a logistic population growth curve. The function initializes a numeric vector using numeric() to store population sizes at each time point. Iterates through time points using seq_along() and classifies growth into three phases: Lag phase: Population remains constant (Pi), Log phase: Growth follows the logistic equation using exp(), Stationary phase: Population reaches the carrying capacity (K). Uses runif() to introduce randomness in the lag and exponential phase durations. Stores results in a matrix (matrix()) and converts it into a dataframe (as.data.frame()). This function models population dynamics and can be applied to various biological growth studies, including bacterial cell growth and environmental population changes.
-
-**Generating a Dataframe with 100 Different Growth Curves**  
-This task required writing a script to generate a dataset containing 100 different logistic growth curves using the previously defined logistic_growth_curve() function. The
-script initializes an empty dataframe (data.frame()) to store all growth curves. Defines key growth parameters (Pi, r, K) and introduces variability in the lag and
-exponential phases using runif(). Uses a for loop to generate 100 growth curves, each with a unique curve_num identifier. Appends each generated curve to the dataframe using
-rbind(). The final dataset provides a diverse set of population growth curves, useful for analyzing biological growth trends and variability.
-
-**Time to reach 80% of the maximum growth**  
-This task involved writing a function to calculate the time required for a population to reach 80% of its carrying capacity using the logistic growth model. The function,
-time_to_80(), accepts the initial population size, intrinsic growth rate, and carrying capacity as inputs, computes 80% of the carrying capacity, and then determines the
-time based on a rearranged logistic growth equation. 
-
-**Calculate hamming distance**  
-This task involved writing a function to compute the Hamming distance between two strings. The script defines a function hamming_distance() that calculates the Hamming
-distance between two strings. Uses nchar() to determine string lengths, max() to get the longer string length when padding is needed, and unlist() (with strsplit) to compare
-the strings character-by-character.
-
-## **Stage-2 Task: Data Interpretation and Visualization**
-### **RNA-Seq Differential Expression Analysis**
-This task required analyzing an RNA-Seq dataset to identify differentially expressed genes between a diseased cell line and a diseased cell line treated with Compound X.
-Below is a detailed description of the tasks and functions implemented using R.
-
-### **Task implementation:**
-The code snippet for this task is included in Stage-2 folder. A volcano plot was generated using base R plot() function, to visualize differentially expressed genes based on
-Log2 Fold Change and statistical significance (-log10(p-value)). The dataset was filtered to extract genes that met the significance criteria. The top 5 most significant
-upregulated and downregulated genes were determined based on p-values. The functions of the top differentially expressed genes were retrieved using GeneCards.
-
-**Upregulated Genes Functions**
-- EMILIN2: encodes a protein involved in extracellular matrix organization and cell adhesion. It plays a role in regulating cell proliferation and apoptosis.
-- POU3F4: encodes a transcription factor critical for the development of the inner ear and certain neural structures. Mutations are associated with hearing impairments.
-- LOC285954: an RNA Gene, and is affiliated with the lncRNA class. Diseases associated include Glioma Susceptibility 1 and Gastric Cancer.
-- VEPH1: results in impaired TGF-beta signaling.
-- DTHD1: encodes a protein containing a death domain, which is implicated in apoptotic signaling pathways and other cellular processes.
-
-**Downregulated Genes Functions**
-- TBX5: encodes a transcription factor essential for heart development and limb pattern formation. Mutations can lead to congenital disorders affecting the heart and limbs.
-- LAMA2: encodes laminin subunit alpha-2, a component of the extracellular matrix. It mediates cell attachment, migration, and tissue organization during embryonic
-  development. Mutations are linked to muscular dystrophy.
-- CAV2: encodes caveolin-2, a protein involved in the formation of caveolae (small invaginations) on the cell membrane. It plays a role in signal transduction and may
-  function as a tumor suppressor.
-- IFITM1: encodes a protein that restricts cellular entry of various viral pathogens, including influenza A virus, Ebola virus, and SARS-CoV-2, thereby playing a role in
-  innate immunity.
-- TNN: encodes tenascin N, an extracellular matrix protein that, in tumors, stimulates angiogenesis by promoting endothelial cell elongation, migration, and sprouting.
-
-**Results Interpretation**  
-The results suggest that Compound X influences cell signaling, apoptosis, extracellular matrix remodeling, and immune response. Upregulated genes indicate enhanced cell
-remodeling and apoptosis, while downregulated genes suggest reduced immune signaling, adhesion, and tumor-related pathways. This may have implications for cancer treatment,
-tissue repair, or immune modulation.
-
-## **Stage-3 Task: Tumor Classification Using PCA and K-Means Clustering**
-The objective of this task was to classify tumors as either benign or malignant using Principal Component Analysis (PCA) and K-Means clustering. Specifically,
-the goals were:
-- Dimensionality reduction using PCA to visualize patterns in the dataset.
-- Applying K-Means clustering to classify and group the patients.
-- Determining if there are potential subclasses within the dataset.
-
-### **Task implementation:**
-The code snippet for this task is included in Stage-3 folder. The cancer dataset was inspected for missing values, and necessary data type conversions were applied. To
-ensure fair comparisons in PCA and clustering, the features were standardized using the scale() function. 
-
-**Principal Component Analysis (PCA)**  
-PCA was applied to transform the high-dimensional dataset into a lower-dimensional space, capturing the most significant variance in the data. The first two principal
-components explained a substantial portion of the variance, enabling effective visualization.
-
-**PCA Interpretation**
-
-![PCA Plot](Stage-3/PCA%20Plot.png)
-
-**Figure 1: PCA Plot of PC1 vs PC2**  
-The PCA plot illustrates the distribution of benign (blue circles) and malignant (yellow triangles) cases across two principal components. While the two groups
-exhibit some separation, there is an observable overlap, indicating that some benign and malignant cases share similar characteristics in this reduced feature space. This
-suggests that PCA alone is not sufficient for perfect classification, but it provides a solid foundation for further clustering methods.
-
----
-
-**K-Means Clustering**  
-Initially, K-Means clustering was performed with K = 2, assuming that the dataset naturally divides into two groups: benign and malignant. The visualization of K = 2 (shown
-in the attached plot) indicates that while the clustering captures some separation between groups, there is significant overlap between the clusters.
-
-![K-means Plot](Stage-3/K-means%20(K=2).png)
-
-**Figure 2: K-means Plot with K = 2**  
-The cluster marked in red contains a mix of both benign and malignant cases, suggesting that some malignant cases share feature similarities with benign cases. The second
-cluster (blue) is more compact, likely representing a subset of tumors with more distinct characteristics.
-
----
-
-To refine the clustering, elbow method was applied to determine the optimal number of clusters, which suggested K = 4, allowing for the possibility of more nuanced subgroup
-classification. K-Means clustering was then performed with four clusters, and this resulted in a more detailed separation, potentially identifying subtypes within benign
-and malignant cases. These subtypes could correspond to different stages of tumor progression, reflecting variations in tumor aggressiveness, cellular composition, or 
-molecular features.
-
-**Interpretation of K-means clustering with K = 4 plot**  
-
-In the plot below:  
-Clusters 1 (Red) & 3 (Green) likely correspond to different types of benign cases.
-- Possibility: One cluster may represent completely benign tumors, while the other might include borderline cases with higher risk of progression.  
-
-Clusters 2 (Blue) & 4 (Orange) likely represent malignant cases.
-- Possibility: One may be aggressive, while the other could be an early-stage or less invasive form.  
-
-Further validation with clinical/histological/genomic data would be needed to confirm these findings.
-
-![K-means Plot](Stage-3/PCA%20and%20K-means%20cluster.png)
-
-**Figure 3: PCA and K-means Plot with K = 4**
-
----
-
-### **Conclusion**  
-- PCA effectively reduced the dataset’s dimensionality, allowing for easier visualization and interpretation of patient groupings. While it revealed some separation between
-benign and malignant cases, feature overlap indicated the need for additional classification methods.  
-- K-Means clustering, with K=4, identified two primary benign clusters and two malignant clusters, suggesting potential tumor subtypes or different stages of progression. The overlap between some clusters highlights the complexity of distinguishing cases based solely on unsupervised learning.
-
-**Clustering Performance and Refinement**    
-This analysis illustrates how unsupervised machine learning techniques can uncover hidden patterns in medical data, offering potential improvements in diagnostic accuracy
-and helping to identify significant subgroups within diagnostic categories. While initial tests showed that K=2 provided a basic separation, increasing to K=3 or K=4 helped
-uncover more nuanced subgroups, such as borderline cases or different malignancy stages. By integrating PCA with K-Means clustering, we gained deeper insights into tumor
-classification patterns, laying the groundwork for future refinements using supervised learning techniques (such as random forest) for improved accuracy. 
+..
