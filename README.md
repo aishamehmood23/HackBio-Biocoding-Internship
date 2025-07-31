@@ -1,5 +1,3 @@
-# HackBio-Biocoding-Internship
-## **About the Internship**  
 The **HackBio BioCoding in R and Python** internship is a virtual program designed to equip participants with coding skills for biological data analysis. This program fosters a collaborative learning environment where interns work in teams, engage with mentors, and complete coding-based tasks that enhance their technical proficiency.  The internship is organized into stages, with each stage focusing on a different coding exercise or real-world problem.
 
 ## **Stage-0 Task: Team Introduction**
@@ -151,3 +149,6 @@ This analysis illustrates how unsupervised machine learning techniques can uncov
 and helping to identify significant subgroups within diagnostic categories. While initial tests showed that K=2 provided a basic separation, increasing to K=3 or K=4 helped
 uncover more nuanced subgroups, such as borderline cases or different malignancy stages. By integrating PCA with K-Means clustering, we gained deeper insights into tumor
 classification patterns, laying the groundwork for future refinements using supervised learning techniques (such as random forest) for improved accuracy. 
+
+
+..
