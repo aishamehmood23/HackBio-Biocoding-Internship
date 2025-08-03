@@ -1,4 +1,4 @@
-Updated: 2025-08-01
+Updated: 2025-08-03
 
 The **HackBio BioCoding in R and Python** internship is a virtual program designed to equip participants with coding skills for biological data analysis. This program fosters a collaborative learning environment where interns work in teams, engage with mentors, and complete coding-based tasks that enhance their technical proficiency.  The internship is organized into stages, with each stage focusing on a different coding exercise or real-world problem.
 
